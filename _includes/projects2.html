@@ -12,15 +12,15 @@
         {%- endif %}
         <div class="row ml-1 mr-1 p-0">
             <div class="project-icons">
+                {%- if project.biorxiv -%}
+                    <div class="icon project-icon" data-toggle="tooltip" title="Preprint">
+                    <a href="https://www.biorxiv.org/content/{{ project.biorxiv }}"><i class="ai ai-biorxiv"></i></a>
+                    </div>
+                {%- endif %}
+            </div>
             {%- if project.github -%}
                 <div class="icon project-icon" data-toggle="tooltip" title="Code Repository">
                 <a href="https://github.com/{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
-                </div>
-            </div>
-            {%- endif %}
-            {%- if project.biorxiv -%}
-                <div class="icon project-icon" data-toggle="tooltip" title="Preprint">
-                <a href="https://www.biorxiv.org/content/{{ project.biorxiv }}"><i class="ai ai-biorxiv"></i></a>
                 </div>
             {%- endif %}
         </div>
