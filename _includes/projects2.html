@@ -1,0 +1,29 @@
+{%- assign sorted_projects = site.projects | sort: "importance" -%}
+{%- for project in sorted_projects -%}
+<div class="row project-card">
+    <div class="col-5">
+        {% include figure.html path=project.img title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col">
+        <h5 class="project-title">{{ project.title }}</h5>
+        <p class="card-text">{{ project.description }}</p>
+        {%- if project.presentations -%}
+            <p class="project-info">Presented at: {{ project.presentations }}</p>
+        {%- endif %}
+        <div class="row ml-1 mr-1 p-0">
+            <div class="project-icons">
+            {%- if project.github -%}
+                <div class="icon project-icon" data-toggle="tooltip" title="Code Repository">
+                <a href="https://github.com/{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
+                </div>
+            </div>
+            {%- endif %}
+            {%- if project.biorxiv -%}
+                <div class="icon project-icon" data-toggle="tooltip" title="Preprint">
+                <a href="https://www.biorxiv.org/content/{{ project.biorxiv }}"><i class="ai ai-biorxiv"></i></a>
+                </div>
+            {%- endif %}
+        </div>
+    </div>
+</div></div>
+{%- endfor %}

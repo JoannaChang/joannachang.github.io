@@ -46,5 +46,69 @@ body.sticky-bottom-footer {
 /*****************************************************************************
 * Projects
 *****************************************************************************/
+.project-card {
+    padding-top: 1rem;
+    padding-bottom:1rem;
+}
+
+.project-title {
+    color: var(--global-text-color);
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 0.9rem;
+}
+
+.project-info {
+    color: var(--global-text-color);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.project-item {
+    width: auto;
+    margin-bottom: 10px;
+
+    .row {
+    display: flex;
+    align-items: center;
+    }
+}
+
+.project-icons {
+    font-size: 1rem;
+
+    a {
+      i::before {
+        color: var(--global-theme-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        i::before {
+          color: var(--global-hover-color);
+        }
+      }
+    }
+}   
+
+.project-icon {
+    font-size: 1rem;
+    padding-right: 0.3rem;
+
+    a {
+      i::before {
+        color: var(--global-theme-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        i::before {
+          color: var(--global-social-color);
+        }
+      }
+    }
+}  
 
 // TODO: redefine projects layout.

@@ -1,10 +1,12 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Memory traces arising from sequential learning
+description:  Animals can learn and perform many behaviors without interference. How do changes in neural activity during learning avoid interference with activity underlying similar behaviors? Recently, Losey et al. (bioRxiv, 2022) examined neural activity of monkeys controlling a brain-computer interface (BCI), and saw that learning led to 'memory traces' of new tasks. To further understand these memory traces and their role in continual learning, we are modelling the same BCI setup using RNNs and examining how they arise under sequential learning.
+img: assets/img/memory.png
 importance: 1
 category: work
+presentations: COSYNE '23, Bernstein '23
+# github: de-novo-learning
 ---
 
 Every project has a beautiful feature showcase page.

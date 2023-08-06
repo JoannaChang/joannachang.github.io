@@ -1,10 +1,13 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: Aligned neural dynamics across animals
+description: Different individuals of the same species perform similar adaptive behaviors. How does this happen when they have different brains with unique circuitries? Using data from three monkeys and four mice across three different behavioral tasks, we show that neural population latent dynamics are preserved across animals of the same species and may serve as the basis of species-specific behaviours.
+img: assets/img/alignment.png
 importance: 2
+presentations: NCM '23
 category: work
+github: BeNeuroLab/2022-preserved-dynamics
+biorxiv: 10.1101/2022.09.26.509498v1
 ---
 
 Every project has a beautiful feature showcase page.

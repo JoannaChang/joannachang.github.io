@@ -33,13 +33,23 @@ layout: default
               {{ page.profile.address }}
             </div>
             {%- endif %}
+
           </div>
           {%- endif %}
 
           <div class="clearfix">
             {{ content }}
+            <!-- Social -->
+            {%- if page.social %}
+            <div class="social">
+                <div class="contact-icons">
+                {% include social.html %}
+                </div>
+            </div>
+            {%- endif %}
           </div>
 
+        <div class ="selected-info">
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
@@ -58,19 +68,14 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
+          <!-- Projects -->
+          {% if page.projects -%}
+          <!-- <h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">projects</a></h2> -->
+          <h2>projects</h2>
+          {%- include projects2.html %}
           {%- endif %}
+        </div>
+
         </article>
 
 </div>

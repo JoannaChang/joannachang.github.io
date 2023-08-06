@@ -1,11 +1,13 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Neural space structure driving <i>de novo</i> learning and adaptation
+description: We are constantly adapting learned behaviors to environmental changes, and what we know influences how easily we adapt&mdash;an experienced football player is better at maneuvering a muddy field than a novice player, for example. It is hard to study the neural basis for this phenomenon because it is impossible to track an animal’s lifelong learning experience, so we modeled it using RNNs instead. We found that different learning experiences led to qualitatively different neural representations, and the specific structure affected subsequent adaptation.
+img: assets/img/denovo.png
 importance: 3
 category: work
+presentations: COSYNE '22, NCM '22, COSYNE '23, Bernstein '23
+github: JoannaChang/de_novo_learning_structure
+biorxiv: 10.1101/2023.05.23.541925v2
 ---
 
 Every project has a beautiful feature showcase page.
