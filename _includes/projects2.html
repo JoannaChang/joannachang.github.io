@@ -18,6 +18,11 @@
                     </div>
                 {%- endif %}
             </div>
+            {%- if project.doi -%}
+                <div class="icon project-icon" data-toggle="tooltip" title="Paper">
+                <a href="https://dx.doi.org/{{ project.doi }}"><i class="fa fa-book"></i></a>
+                </div>
+            {%- endif %}
             {%- if project.github -%}
                 <div class="icon project-icon" data-toggle="tooltip" title="Code Repository">
                 <a href="https://github.com/{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
@@ -25,5 +30,5 @@
             {%- endif %}
         </div>
     </div>
-</div></div>
+</div>
 {%- endfor %}
