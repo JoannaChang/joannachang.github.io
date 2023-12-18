@@ -141,7 +141,7 @@
           </div>
 
           <div class="clearfix">
-            <p>I’m a computational neuroscience PhD student at Imperial College London with <a href="https://cclopath.bg-research.cc.ic.ac.uk/" rel="external nofollow noopener" target="_blank">Claudia Clopath</a> and <a href="https://beneuro.ic.ac.uk/" rel="external nofollow noopener" target="_blank">Juan Álvaro Gallego</a>.  My research focuses on modelling and analyzing neural population dynamics in the motor cortex to understand how we learn different motor skills.</p>
+            <p>I’m a computational (and recently experimental) neuroscience PhD student at Imperial College London with <a href="https://cclopath.bg-research.cc.ic.ac.uk/" rel="external nofollow noopener" target="_blank">Claudia Clopath</a> and <a href="https://beneuro.ic.ac.uk/" rel="external nofollow noopener" target="_blank">Juan Álvaro Gallego</a>.  My research focuses on modelling and analyzing neural population dynamics in the motor cortex to understand how we learn different motor skills.</p>
 
 <p>Previously, I did my Master’s in Bioinformatics &amp; Theoretical Systems Biology at Imperial and my undergraduate degree in Biology (with a Computer Science minor) at Pomona College in the US. Apart from research, I’m passionate about making science and technology more accessible to the general public.</p>
 
@@ -179,6 +179,34 @@
 
   <picture>
     
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/bci-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/bci-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/bci-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/bci.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col">
+        <h5 class="project-title">Subcortical BCI for motor control</h5>
+        <p class="card-text">Brain computer interfaces (BCIs) can help restore motor function by directly reading the user's intent from their brain. However, current BCIs lack the ability to provide stable control over skilled movements. To address this problem, we are building a BCI based on activity in subcortical nuclei of the basal ganglia, which are important for skilled and automatic movements. Currently, we are using neural population recordings from both cortex and basal ganglia to understand their contributions to motor control, along with behavioral recordings while mice perform both naturalistic and skilled behaviors.</p>
+        <div class="row ml-1 mr-1 p-0">
+            <div class="project-icons">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row project-card">
+    <div class="col-5">
+        <figure>
+
+  <picture>
+    
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/memory-480.webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/memory-800.webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/memory-1400.webp"></source>
@@ -194,14 +222,13 @@
     </div>
     <div class="col">
         <h5 class="project-title">Memory traces arising from sequential learning</h5>
-        <p class="card-text">Animals can learn and perform many behaviors without interference. How do changes in neural activity during learning avoid interference with activity underlying similar behaviors? Recently, Losey et al. (bioRxiv, 2022) examined neural activity of monkeys controlling a brain-computer interface (BCI), and saw that learning led to 'memory traces' of new tasks. To further understand these memory traces and their role in continual learning, we are modelling the same BCI setup using RNNs and examining how they arise under sequential learning.</p>
+        <p class="card-text">Animals can learn and perform many behaviors without interference. How do changes in neural activity during learning avoid interference with activity underlying similar behaviors? Recently, Losey et al (bioRxiv, 2022) examined neural activity of monkeys controlling a BCI, and saw that learning led to 'memory traces' of new tasks. To further understand these memory traces and their role in continual learning, we are modelling the same BCI setup using RNNs and examining how they arise under sequential learning.</p>
 <p class="project-info">Presented at: COSYNE '23, Bernstein '23</p>
         <div class="row ml-1 mr-1 p-0">
             <div class="project-icons">
             </div>
         </div>
     </div>
-</div>
 </div>
 <div class="row project-card">
     <div class="col-5">
@@ -225,19 +252,18 @@
     <div class="col">
         <h5 class="project-title">Aligned neural dynamics across animals</h5>
         <p class="card-text">Different individuals of the same species perform similar adaptive behaviors. How does this happen when they have different brains with unique circuitries? Using data from three monkeys and four mice across three different behavioral tasks, we show that neural population latent dynamics are preserved across animals of the same species and may serve as the basis of species-specific behaviours.</p>
-<p class="project-info">Presented at: NCM '23</p>
+<p class="project-info">Presented at: NCM '23, Mila</p>
         <div class="row ml-1 mr-1 p-0">
             <div class="project-icons">
-<div class="icon project-icon" data-toggle="tooltip" title="Preprint">
-                    <a href="https://www.biorxiv.org/content/10.1101/2022.09.26.509498v1" rel="external nofollow noopener" target="_blank"><i class="ai ai-biorxiv"></i></a>
-                    </div>
             </div>
+<div class="icon project-icon" data-toggle="tooltip" title="Paper">
+                <a href="https://dx.doi.org/10.1038/s41586-023-06714-0" rel="external nofollow noopener" target="_blank"><i class="fa fa-book"></i></a>
+                </div>
 <div class="icon project-icon" data-toggle="tooltip" title="Code Repository">
                 <a href="https://github.com/BeNeuroLab/2022-preserved-dynamics" rel="external nofollow noopener" target="_blank"><i class="fab fa-github gh-icon"></i></a>
                 </div>
         </div>
     </div>
-</div></article>
 </div>
 <div class="row project-card">
     <div class="col-5">
@@ -274,21 +300,20 @@
         </div>
     </div>
 </div>
+
+        </div>
+
+        </article>
+
 </div>
 
-        
-
-        
-
-
-
       
-    
+    </div>
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2023 Joanna C. Chang. Theme: adapted from <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>.
-Last updated: August 06, 2023.
+Last updated: December 18, 2023.
       </div>
     </footer>
 
